@@ -1,19 +1,8 @@
-# This is a comment in YAML
-
-myapp:
-  service: my-ci-cd-app
-  test1: script1
-  test2: script2
-  myArray: [1, 2, 3, 4] # Cleaner syntax of simple array
-  mySecondArray:
-    - 1
-    - 2
-    - 3
-    - 4
-    - key1: value1
-      key2: value2
-    - key3: value3
-      key4: value4
-  multiline: |
-    Hi my name is Marouane
-    I'm a full stack developer
+name: My First Github Action
+on: [push]
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: tree
