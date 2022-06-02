@@ -1,0 +1,17 @@
+{
+    "myapp": {
+        "service": "my-ci-cd-app",
+        "test1": "script1",
+        "test2": "script2",
+        "myArray": [
+            {
+                "key1": "value1",
+                "key2": "value2"
+            },
+            {
+                "key3": "value3",
+                "key4": "value4"
+            }
+        ]
+    }
+}
